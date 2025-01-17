@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/payment/results">
+    <label style="display: block;" for="apr">APR
+      <input type="text" id="apr" name="apr" placeholder="E.g. 5.42">
+    </label>
+    <label style="display: block;" for="years">Number of years
+      <input id="years" name="years" type="text" placeholder="How many years to repay?">
+    </label>
+    <label for="principal">Principal
+      <input type="text" name="principal" id="principal" placeholder="How much principal?">
+    </label>
+    <button style="display: block;" type="submit">Calculate monthly payment</button>
+  </form>
+</body>
+</html>

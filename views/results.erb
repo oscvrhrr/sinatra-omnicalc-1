@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <% if @title == "Square" %>
+  <h1><%= @title %> Results</h1>
+  <p>Number</p>
+  <p><%= @number %></p>
+  <p>Square</p>
+  <p><%= @number * @number %></p>
+  <a href="/square/new">Calculate another square</a>
+  <% end %>
+
+  <% if @title == "Square Root" %>
+  <h1><%= @title %> Results</h1>
+  <p>Number</p>
+  <p><%= @number %></p>
+  <p>Square</p>
+  <p><%= Math.sqrt(@number) %></p>
+  <a href="/square_root/new">Calculate another square root</a>
+  <% end %>
+
+  <% if @title == "Payment" %>
+    <h1><%= @title %> Results</h1>
+    <p>APR</p>
+    <p><%= @apr %></p>
+    <p>Number of years</p>
+    <p><%= @years %></p>
+    <p>Principal</p>
+    <p><%= @principal %></p>
+    <p>Payment</p>
+    <p><%= @monthly %></p>
+    <a href="/payment/new">Calculate another payment</a>
+  <% end %>
+
+  <% if @title == "Random" %>
+    <h1><%= @title %> Results</h1>
+    <p>Minimum</p>
+    <p><%= @min %></p>
+    <p>Maximum</p>
+    <p><%= @max %></p>
+    <p>Random</p>
+    <p><%= @random %></p>
+    <a href="/random/new">Pick another random number</a>
+  <% end %>
+</body>
+</html>
